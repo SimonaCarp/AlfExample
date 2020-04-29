@@ -7,7 +7,6 @@ import java.util.List;
 
 @Service
 public class AlfServiceImplementation implements AlfService {
-    String reportOutput;
 
     public String printFizzBuzz(int n) {
         int integerCount = 0;
@@ -30,12 +29,7 @@ public class AlfServiceImplementation implements AlfService {
                 integerCount++;
             }
         }
-         reportOutput = displayReportOutput(reportList,integerCount);
-        return reportOutput;
-    }
-
-    @Override
-    public String getOutputReport() {
+        String reportOutput = displayReportOutput(reportList,integerCount);
         return reportOutput;
     }
 
