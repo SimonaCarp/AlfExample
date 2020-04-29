@@ -55,4 +55,7 @@ public class AlfControllerIntegrationTests {
         MvcResult result = mockMvc.perform(get("/display/{number}", "String")).andDo(print())
                 .andExpect(status().is4xxClientError()).andReturn();
     }
+
 }
+}
+
